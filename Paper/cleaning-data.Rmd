@@ -1,0 +1,10 @@
+---
+title: "Cleaning Data"
+output: html_document
+---
+
+### Steps in cleaning up data
+
+1. Create a csv from excel file
+2. Escape all single quotes
+3. Remove excessive padding before commas `sed -i '' 's/[ ]*,/,/g' data/rollingsales_brooklyn.csv`
