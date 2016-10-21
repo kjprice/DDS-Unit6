@@ -7,9 +7,8 @@ summary (Bronx)
 str(Bronx)
 
 #Changed sale price and square footage variables to numeric and not a factor for analyses
-SALE.PRICE.N <- as.numeric(gsub("[^[:digit:]]","", Bronx$SALE.PRICE))
-GROSS.SQUARE.FEET.N <- as.numeric(gsub("[^[:digit:]]","", Bronx$GROSS.SQUARE.FEET))
-LAND.SQUARE.FEET.N <- as.numeric(gsub("[^[:digit:]]","", Bronx$LAND.SQUARE.FEET))
+sale.price.n <- as.numeric(gsub("[^[:digit:]]","", Bronx$SALE.PRICE))
+gross.square.feet.n <- as.numeric(gsub("[^[:digit:]]","", Bronx$GROSS.SQUARE.FEET))
 
 #Made all variable names lower case
 names(Bronx) <- tolower(names(Bronx)) 
