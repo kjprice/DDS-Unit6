@@ -1,0 +1,6 @@
+install.packages("twitteR")
+install.packages(c("devtools", "rjson", "bit64", "httr"))
+install_github("geoffjentry/twitteR")
+library(twitteR)
+setup_twitter_oauth("API key", "API secret“, “Access Token”, “Access Secret”)
+https://apps.twitter.com/app/new
